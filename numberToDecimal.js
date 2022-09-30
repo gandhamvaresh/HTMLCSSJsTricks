@@ -12,3 +12,11 @@ function convertDecimal(exiStingnum=0,decimal, NewNumber){
     return addNum/decimalCheck;
 }
 console.log(convertDecimal(exiStingnum=0.223,3, 4));
+
+const addLeadingZeros = (num: number, totalLength: number): string =>{
+  return String(num).padStart(totalLength, '0');
+}
+
+const addTailingZeros = (num: number, totalLength: number): string =>{
+  return String(num).padStart(totalLength+1, '0');
+}
